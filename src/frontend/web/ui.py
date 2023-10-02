@@ -24,8 +24,8 @@ from utils import DiffusionMagicPaths
 def _get_footer_message() -> str:
     version = f"<center><p> v{VERSION} "
     footer_msg = version + (
-        '  © 2023 <a href="https://github.com/rupeshs">'
-        " Rupesh Sreeraman</a></p></center>"
+        '  © 2023 <a href="https://github.com/ragibmondal">'
+        " Ragib Hasan</a></p></center>"
     )
     return footer_msg
 
@@ -37,9 +37,9 @@ def diffusionmagic_web_ui(
     stable_diffusion_type = get_diffusion_type(model_id)
     with gr.Blocks(
         css=DiffusionMagicPaths.get_css_path(),
-        title="DiffusionMagic",
+        title="Ragib Magic vertion 1",
     ) as diffusion_magic_ui:
-        gr.HTML("<center><H3>DiffusionMagic 3.5</H3></center>")
+        gr.HTML("<center><H3>Ragib Magic vertion 1 </H3></center>")
         with gr.Tabs():
             if stable_diffusion_type == StableDiffusionType.base:
                 with gr.TabItem("Text to Image"):
